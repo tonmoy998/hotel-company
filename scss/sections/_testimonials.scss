@@ -1,0 +1,52 @@
+@use '../custom' as *;
+.testimonials{
+    height: 100%;
+    position: relative;
+    .carousel.slide{
+        .button-container{
+            width: 10rem!important;
+            position: relative;
+            display: flex;
+            margin:3rem auto;
+        }
+        .carousel-indicators{
+            button{
+                background-color: $primary;
+                height: 0.8rem;
+                margin-top: 15rem!important;
+            }
+        }
+        .carousel-item{
+            position: relative;
+            .rating{
+                color: $black;
+                .client{
+                    text-align: center;
+                }
+                p{
+                    max-width: 35rem;
+                    margin: 0.5rem auto;
+                    padding:0.5rem 1.5rem;
+                }
+                .star{
+                    width: 12.3rem;
+                    display: flex;
+                    margin: 0.5rem auto;
+                    i{
+                        font-size: 2rem;
+                        color: rgb(212, 216, 5);
+                        padding: 0.1rem;
+                    }
+                }
+            }
+            .d-block{
+                width: 15rem!important;
+                height: 15rem;
+                border-radius: 15rem;
+                display: flex;
+                margin: 1rem auto;
+                border: 3px solid $primary;
+            }
+        }
+    }
+}

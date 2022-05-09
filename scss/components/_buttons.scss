@@ -1,0 +1,9 @@
+@use '../custom' as *;
+@use "../components/mixins" as *;
+
+.--btn{
+    padding: 0.675rem 1.35rem;
+    font-weight:bold;
+    color: $white!important;
+    font-size: 1.3rem;
+}

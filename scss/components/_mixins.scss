@@ -1,0 +1,11 @@
+@use '../custom' as *;
+
+@mixin position-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin gradient {
+    background-image: linear-gradient(to bottom,$primary,$secondary);
+}

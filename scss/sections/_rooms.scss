@@ -1,0 +1,28 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.rooms{
+    .container{
+        .row{
+            button{
+                margin:1rem 0.925rem;
+            }
+            .rating{
+                i{
+                    color: rgb(219, 223, 6);
+                    font-size: 1.3rem;
+                }
+            }
+            .col-md-6{
+                margin: 1rem 0;
+            }
+        }
+    }
+    @media screen and (max-width:900px){
+        .row{
+            button{
+                display: flex;
+                margin: 1rem auto!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@use '../custom' as *;
+footer{
+    padding-top: 2rem;
+    ul,li{
+        padding: 0;
+        margin: 0;
+    }
+    .box{
+        background-color: $primary;
+        h6{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 0.6rem;
+        }
+    }
+   .--links{
+       width: 15.5rem;
+       display: flex;
+       margin: 0rem auto;
+       i{  color: $primary;
+           font-size: 2.5rem;
+           margin: 0.5rem 0.5rem;
+       }
+   }
+   .row{
+       .col-md-6{
+           .--description{
+               line-height: 2rem;
+           }
+           .links{
+               display: block;
+                   li{
+                       width: 90%;
+                       display: flex;
+                       margin: 0.6rem auto!important;        
+                       a{ 
+                        width: 100%;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                        text-decoration: none;
+                    }
+               }
+           }
+       }
+   }
+}

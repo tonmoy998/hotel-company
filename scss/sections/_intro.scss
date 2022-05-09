@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use '../components/mixins' as *;
+@use '../components/buttons' as *;
+.intro{
+    padding: 2rem o!important;
+    position: relative;
+    .container{
+        .row{
+            button{
+                display: flex;
+                margin: 1rem auto!important;
+            }
+            .--description{
+                .display-5{
+                   padding-top: 1.5rem!important; 
+                }
+            }
+        }
+    }
+}

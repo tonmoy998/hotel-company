@@ -1,0 +1,48 @@
+@use "../custom" as *;
+nav{
+    width: 100%;
+    z-index: 10;
+    .container{
+        position: relative;
+        .navbar-collapse{
+            a{
+                font-weight: 700;
+                font-size: 1.5rem;
+                &:hover{
+                    color: $secondary!important;
+                }
+            }
+            .dropdown-menu{
+                background-color: $primary;
+                li{
+                    a{
+                        color: $white;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+        .logo{
+            width: 8rem;
+        }
+        .d-flex{
+            .--input{
+                height: 3rem!important;
+            }
+            .--search{
+                height: 3rem;
+                padding: 0.5rem 3rem;
+                text-align: left!important;
+                span{
+                    position:relative;
+                    i{
+                        margin:-0.6rem -5rem;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

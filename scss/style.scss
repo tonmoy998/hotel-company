@@ -1,0 +1,48 @@
+@use "./custom" as *;
+//mixins
+@use './components/buttons';
+@use './components/mixins';
+@use "./components/fontawesome";
+
+//sections
+@use './sections/intro';
+@use './sections/nav';
+@use './sections/rooms';
+@use './sections/features';
+@use './sections/footer';
+@use './sections/testimonials';
+ html,body{
+     scroll-behavior: smooth;
+     p{
+         font-size: 1.2rem;
+         font-weight: 600;
+     }
+     section{
+         margin:2rem 0rem;
+     }
+ }
+ .tittle-underline{
+    width: 35rem;
+    height: 0.3rem;
+    background-color: $primary;
+    margin: 0 auto!important;
+}
+.tittle-box{
+    width:1.3rem;
+    height: 0.7rem;
+    background-color: $primary;
+    margin:0 auto;
+}
+@media screen and (max-width:575px){
+  
+    .tittle-underline{
+        width: 17rem;
+    }
+    .tittle-box{
+        width: 0.9rem;
+        height: 0.5rem;
+    }
+    .--up-icon{
+        left: 85%!important;
+    }
+}
